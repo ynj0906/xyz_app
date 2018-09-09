@@ -122,7 +122,7 @@ USE_TZ = True
 
 
 import os
-BASE_DIR2 = os.path.dirname(os.path.dirname(os.path.relpath(__file__)))
+BASE_DIR2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR2, 'static')
 STATIC_URL = '/static/'
 
@@ -138,3 +138,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+LOGIN_REDIRECT_URL = "/item/hello"
+LOGIN_URL = "/accounts/login/"
+
