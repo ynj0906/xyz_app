@@ -142,3 +142,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 LOGIN_REDIRECT_URL = "/item/hello"
 LOGIN_URL = "/accounts/login/"
 
+try:
+    from .local_settings import *
+except ImportError:
+    pass
