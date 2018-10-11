@@ -6,6 +6,7 @@ from . import views
 #ルーティングの設定
 
 urlpatterns = [
+
     
     url(r"^$", views.index, name="item_index"),
 #アイテムの更新
@@ -23,5 +24,6 @@ urlpatterns = [
     url(r"^hello/$", views.hello, name="hello"),
     url(r"^post/(?P<post_id>\d+)/$", views.post, name="post"),
     url(r"^hello/$", views.title, name="title"),
+    #url(r'^$', views.Page.as_view(), name="item_index"),
 
     ]
