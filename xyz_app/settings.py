@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'item.apps.ItemConfig',  #ItemConfigを追加
-    'pure_pagination',
 ]
 
 MIDDLEWARE = [
